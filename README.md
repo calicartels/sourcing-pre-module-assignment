@@ -19,12 +19,12 @@ sourcing_for_data_analytics/
 ├── README.md
 ├── requirements.txt
 ├── setup.py
-└── venv/  # virtual environment directory 
+└── venv/  
 ```
 ## About the Dataset
 
 - The original dataset can be found here: [New York City Job Dataset](https://www.kaggle.com/datasets/anoopjohny/new-york-city-job-dataset)
-- A subset of this Dataset has been considered for the project by considering only the first 15 columns.
+- A subset of this Dataset has been considered for the project by considering only the first 15 columns (Which has been packaged in the project)
 
 ## Setup
 
@@ -104,9 +104,9 @@ pytest test/test_processor.py -v
 ## Stuff That I'm Still Learning and would want to implement in the future xD
 
 - Generating PyTests for Matplotlib functions.
-- Better Pull Requests on Github
+- Better Pull Requests on Github or better use of Git in general
 - Argparse for CLI commands
-- 
+
 ## License
 
 This project is licensed under the MIT License.
