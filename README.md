@@ -39,7 +39,7 @@ Download the Zip file locally.
 
 ### 2. Navigate to the project directory
 ```bash
-cd Sourcing_for_Data_Analytics
+cd sourcing-pre-module-assignment
 ```
 
 ### 3. Install the required packages
@@ -51,6 +51,11 @@ pip install -e .
 
 ```bash
 python3 -m venv venv
+```
+or 
+
+```bash
+python -m venv venv
 ```
 #### Activate the environment:
 #### Windows:
@@ -67,21 +72,35 @@ source venv/bin/activate
 
 ## Usage
 
+### Installing reqy=uirements
+```bash
+pip install -r requirements.txt
+```
+
 ### To Show the output of the dataset before and after the processing is done
 ```bash
 python -m data_preprocessing.cli NYC_Jobs.csv --show
 ```
 
 ### Visualize the salary distribution
+
+The image is saved as a `.png` file in the source directory
+
 ```bash
 python -m data_preprocessing.cli NYC_Jobs.csv --visualize salary_distribution.png
 ```
 
 ### Display specific columns
+Command :
+
+```bash
+python -m data_preprocessing.cli NYC_Jobs.csv --columns "NAME OF THE COLUMN_1" "NAME OF THE COLUMN_1"
+```
+Example :
+
 ```bash
 python -m data_preprocessing.cli NYC_Jobs.csv --columns "Salary Range To"
 ```
-
 ## Testing
 
 ### Run tests
