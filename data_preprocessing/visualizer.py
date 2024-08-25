@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 
 def visualize_salary_distribution(df: pd.DataFrame, output_path: str):
     """
-    Visualize the salary distribution and saving the plot.
+    Visualize the salary distribution and save the plot.
 
-    :parameter df: The DataFrame containing the dataset.
-    :parameter output_path: Path to save the plot image.
+    :parameter df: The dataframe containing the dataset.
+    :parameter output_path: Path to save the plotted image.
     """
     plt.figure(figsize=(10, 6))
     df['Salary Range From'].plot(kind='hist', bins=50, alpha=0.7, label='Salary Range From')
