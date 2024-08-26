@@ -6,6 +6,11 @@ Premodule Assignment - AIPI 510
 
 Create a Python script that does some specific task (i.e. process a csv file in some way), write unit tests for it, and package it into a command line tool.
 
+## Objective 
+
+The objective I have chosen is to modify the dataset by removing the NaN or Null Values from a subset of the Dataset.
+Here, columns "Salary Range To", "Salary Range From", and "Job Category" are modified to remove the NaNs.
+
 ## Project Structure
 
 ```plaintext
