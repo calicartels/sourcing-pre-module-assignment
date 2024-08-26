@@ -12,13 +12,16 @@ def real_data():
 def test_load_data(real_data):
     """
     testing to see if the data has been loaded as a dataframe
+    parameter real_data: loaded dataset simulation
     """
     assert isinstance(real_data,pd.DataFrame)
 
 def test_clean_data(real_data):
 
     """
-    Testing the clean data function to see if the processed dataframe has been removed of the NaN's, if the columns have been presented 
+    Testing the clean data function to see if the processed dataframe has been removed of the NaN's, if the columns have been presented.
+    parameter real_data: loaded dataset simulation.
+
     """
     # Clean the dataset
     df_cleaned = clean_data(real_data)
